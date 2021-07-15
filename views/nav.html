@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Irum Workflow</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="/modelList">모델리스트 추가</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">재고조회</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/purchase">매입</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">매출</a>
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            id="logout"
+            onClick="location.href='/logout'"
+            class="btn btn-danger"
+          >
+            로그아웃
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
