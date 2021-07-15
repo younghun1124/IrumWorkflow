@@ -85,7 +85,7 @@ app.get("/detail/:id", function (요청, 응답) {
   db.collection("modelList").findOne(
     { _id: parseInt(요청.params.id) },
     function (에러, 결과) {
-      if (에러 === null) {
+      if (에러) {
         응답.send("Page not Found");
       }
       응답.render("detail.ejs", { data: 결과 });
